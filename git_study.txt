@@ -17,3 +17,7 @@
 		i :  입력모드로 변경, esc : 입력모드에서 나오기, w 저장, q종료 , wq 저장 종료
  git commit -m 'message'  :  commit 을 하고 commit 에 대한 간단한 메세지 작성
  git log : commit 내역 확인  
+
+5. 특정 commit 지점으로 되돌리기
+ 5-1) git log 또는  git reflog 를 통해 commit id  확인
+	git reset --soft<commit> : commit 내역을 되돌리고, commit 만 취소.

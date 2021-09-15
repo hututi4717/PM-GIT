@@ -20,10 +20,4 @@
 
 5. 특정 commit 지점으로 되돌리기
  5-1) git log 또는  git reflog 를 통해 commit id  확인
-	git reset --soft<commit> : commit 내역을 되돌리고, commit 만 취소.(staging area 에는 여전히 포함된 상태)
-	즉, add까지는 진행된 상태로 되돌리는 것.
-	git reset --mixed<commit> :  commit 내역을 되돌리고 staging 까지 취소.
-	--------------파일 영향 x------------------
-	git reset --hard<commit> : commit 내역을 되돌리고 파일을 rollback
-	git revert <commit>  :  지정한 commit으로 인해 발생한 변경을 되돌리고, 새로운 commit 을 생성해 commit내역에 추가.
-
+	git reset --soft<commit> : commit 내역을 되돌리고, commit 만 취소.
